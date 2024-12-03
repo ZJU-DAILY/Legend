@@ -4,8 +4,6 @@ Legend is a lightweight heterogeneous system for efficient and cost-effective gr
 
 Environment preparation
 -------------------------------------------------------------------------------
-This project builds on top of a opensource codebase available [here](https://github.com/enfiskutensykkel/ssd-gpu-dma). 
-
 ### Requiements ###
 * Python 3.8
 * CUDA 11.1
@@ -91,3 +89,7 @@ $ ./nvm-train-nvme --ctrl=/dev/libnvm0 --threads=4096 --page_size=32768 --queue_
 * `queue_depth` specifies the queue depth per queue. 
 
 The dataset used to train should be modified in the code `./benchmarks/train_nvme/main.cu`.
+
+Acknowledgments
+--------------------------------------------------------------------------------
+The GPU-SSD direct access module of this project is built on top of an open-source codebase available [here](https://github.com/enfiskutensykkel/ssd-gpu-dma). We employ the framework of this codebase and develop a customized queue management mechanism (submission queue inserting, doorbell ringing, and completion queue polling) to improve the throughput between GPU and SSD. 
