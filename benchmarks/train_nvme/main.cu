@@ -79,7 +79,6 @@ std::shared_ptr<CmdTime> createReportingList(size_t numEntries, int device)
     {
         throw err;
     }
-
     return std::shared_ptr<CmdTime>(list, cudaFree);
 }
 
