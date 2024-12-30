@@ -28,7 +28,6 @@ void _nvm_admin_cq_create(nvm_cmd_t* cmd, const nvm_queue_t* cq)
 }
 
 
-
 void _nvm_admin_cq_delete(nvm_cmd_t* cmd, const nvm_queue_t* cq)
 {
     nvm_cmd_header(cmd, 0, NVM_ADMIN_DELETE_COMPLETION_QUEUE, 0);
