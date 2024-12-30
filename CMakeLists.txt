@@ -58,7 +58,6 @@ if (no_cc)
     set(CCUDA_NVCC_FLAGS "${CMAKE_C_FLAGS} -D__NO_COHERENCE__")
 endif ()
 
-
 # Try to find Nvidia driver
 if (CUDA_FOUND AND NOT no_cuda)
 
