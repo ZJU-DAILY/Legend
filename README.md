@@ -1,6 +1,6 @@
-Legend: A Lightweight Heterogeneous System for Out-of-core Graph Embedding Learning
+Efficient Graph Embedding at Scale: Optimizing CPU-GPU-SSD Integration
 ===============================================================================
-Legend is a lightweight heterogeneous system for efficient and cost-effective graph embedding learning, comprising a CPU, a GPU and an NVMe SSD. It adopts a novel workflow that reconsiders data placement and meticulously assigning tasks to leverage the unique strengths of each hardware component. A prefetch-friendly order is proposed to support embedding prefetching from NVMe SSD to GPU. Furthermore, it also optimize GPU-NVMe SSD direct access and GPU computing to achieve better performance. 
+Legend is a lightweight heterogeneous system for efficient and cost-effective graph embedding learning, comprising a CPU, a GPU and an NVMe SSD. It adopts a novel workflow that systematically redefines data management and meticulously assigns tasks to leverage the unique strengths of each hardware component. A prefetch-friendly order is proposed to support embedding prefetching from NVMe SSD to GPU and a high-throughput GPU-NVMe SSD direct access driver is designed to reduce I/O overhead. Furthermore, it also optimizes GPU computing by a customized parallel execution strategy to achieve better performance. 
 
 Environment preparation
 -------------------------------------------------------------------------------
