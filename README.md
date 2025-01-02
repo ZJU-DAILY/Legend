@@ -1,6 +1,6 @@
 Efficient Graph Embedding at Scale: Optimizing CPU-GPU-SSD Integration
 ===============================================================================
-This is a lightweight heterogeneous system named Legend for efficient and cost-effective graph embedding learning, comprising a CPU, a GPU and an NVMe SSD. It adopts a novel workflow that systematically redefines data management and meticulously assigns tasks to leverage the unique strengths of each hardware component. A prefetch-friendly order is proposed to support embedding prefetching from NVMe SSD to GPU and a high-throughput GPU-NVMe SSD direct access driver is designed to reduce I/O overhead. Furthermore, it also optimizes GPU computing by a customized parallel execution strategy to achieve better performance. 
+This is a lightweight heterogeneous system named Legend for efficient and cost-effective graph embedding learning, comprising a CPU, a GPU and an NVMe SSD. It adopts a novel workflow that systematically redefines data placement and meticulously assigns tasks to leverage the unique strengths of each hardware component. A prefetch-friendly order is proposed to support embedding prefetching from NVMe SSD to GPU and a high-throughput GPU-NVMe SSD direct access driver is designed to reduce I/O overhead. Furthermore, it also optimizes GPU computing by a customized parallel execution strategy to achieve better performance. 
 
 Environment preparation
 -------------------------------------------------------------------------------
