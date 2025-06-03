@@ -322,8 +322,6 @@ void moveKernel(void* src, void* dst, size_t chunkSize)
     moveBytes(src, 0, dst, 0, chunkSize * numThreads);
 }
 
-
-
 __host__ static inline
 void launchMoveKernel(size_t pageSize, void* input, void* src, void* dst, size_t currChunk, const Settings& settings)
 {
