@@ -78,3 +78,4 @@ static inline size_t _nvm_host_page_size()
 
 
 #endif /* __NVM_INTERNAL_UTIL_H__ */
+
