@@ -9,10 +9,8 @@ extern "C" {
 #include <stdint.h>
 #include <stdbool.h>
 
-
-
 /*
- * Get controller information.
+ * Get controller information. 
  */
 int nvm_admin_ctrl_info(nvm_aq_ref ref,               // AQ pair reference
                         struct nvm_ctrl_info* info,   // Controller information structure
